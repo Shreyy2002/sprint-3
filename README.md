@@ -21,7 +21,7 @@ pipeline {
     agent any
 
     environment {
-        NOTIFY_EMAIL = 'shreytyagi75@example.com'
+        NOTIFY_EMAIL = 'shreytyagi75@gmail.com'
         SLACK_CHANNEL = '#slack-notification' 
     }
 
