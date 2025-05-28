@@ -175,6 +175,16 @@ ${env.BUILD_URL}console
 
 ---
 
+
+
+- Above is the pipeline code for the scripted pipeline, which sends the notification to slack and email about the build whether it fails or success.
+- Below are the screenshots of notification recieved on email and slack.
+  
+![Screenshot 2025-05-26 221328](https://github.com/user-attachments/assets/98deffba-370c-4339-9ff2-3a41e1f14ced)
+![Screenshot 2025-05-26 221346](https://github.com/user-attachments/assets/79d138a6-6e59-4e91-9a1e-2a5ede68283c)
+
+---
+
 #  Jenkins Pipeline for Code Compilation 
 
 ```groovy
@@ -207,10 +217,3 @@ pipeline {
 }
 
 ```
-
-- Above is the pipeline code for the scripted pipeline, which sends the notification to slack and email about the build whether it fails or success.
-- Below are the screenshots of notification recieved on email and slack.
-  
-![Screenshot 2025-05-26 221328](https://github.com/user-attachments/assets/98deffba-370c-4339-9ff2-3a41e1f14ced)
-![Screenshot 2025-05-26 221346](https://github.com/user-attachments/assets/79d138a6-6e59-4e91-9a1e-2a5ede68283c)
-
