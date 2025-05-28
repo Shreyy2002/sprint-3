@@ -173,6 +173,41 @@ ${env.BUILD_URL}console
 }
 ```
 
+---
+
+#  Jenkins Pipeline for Code Compilation 
+
+```groovy
+pipeline {
+    agent any
+
+    environment {
+        // Define GitHub repo URL
+        GIT_REPO = 'https://github.com/your-username/your-java-project.git'
+        BRANCH = 'main' // or your specific branch
+    }
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                echo "Cloning project from ${GIT_REPO}..."
+                git branch: "${BRANCH}", url: "${GIT_REPO}"
+                echo 'Repository cloned successfully.'
+            }
+        }
+
+        stage('Compile Java Code') {
+            steps {
+                echo 'Starting Java code compilation using Maven...'
+                sh 'mvn clean compile'
+                echo 'Java code compiled successfully.'
+            }
+        }
+    }
+}
+
+```
+
 - Above is the pipeline code for the scripted pipeline, which sends the notification to slack and email about the build whether it fails or success.
 - Below are the screenshots of notification recieved on email and slack.
   
