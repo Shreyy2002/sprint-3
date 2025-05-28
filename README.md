@@ -185,7 +185,7 @@ ${env.BUILD_URL}console
 
 ---
 
-#  Jenkins Pipeline for Code Compilation 
+#  Jenkins Pipeline for Java Code Compilation 
 
 ```groovy
 pipeline {
